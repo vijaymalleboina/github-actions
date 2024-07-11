@@ -14,4 +14,4 @@ jobs:
           node-version: '20.x'
       - name: installing dependences
         run: npm ci
-        working-directory: 04-using-action/react-app
+        working-directory: 04-using-action/recat-app

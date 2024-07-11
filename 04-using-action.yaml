@@ -1,0 +1,12 @@
+name: o4- using action
+
+on: push
+
+jobs:
+  build:
+    run-on: ubuntu-latest
+    steps:
+      - name: checkout code
+        user: actions/checkout@v4
+      -name: printing folders
+       run: ls

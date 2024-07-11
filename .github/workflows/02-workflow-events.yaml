@@ -1,6 +1,11 @@
 name: 02- workflow events 
 
-on: push
+on: 
+  push:
+  pull_request:
+  schudle:
+    - corn: '*/2 * * * *'
+  workflow_dispatch:  
 
 jobs:
   echo:

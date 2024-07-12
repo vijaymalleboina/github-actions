@@ -3,7 +3,7 @@ name: 07 - Using Expressions
 on: 
   push:
   workflow_dispatch:
-    input:
+    inputs:
       debug:
         type: boolean
         default: false
@@ -18,8 +18,9 @@ jobs:
           echo "Branch: ${{github.ref}}
           echo "Commit SHA: ${{github.sha}}
           echo "Runner OS: ${{runner.os}}
-      - name:'[debug] Print when triggered from main'
-        if: ${{ inputs.debug && github.ref == 'refs/heads/main' }}
-        run : echo "I was triggered from main"
+      - name: '[debug] Print when triggered from main'
+        if: ${{inputs.debug && github.ref == 'refs/heads/main'}}
+        run: echo "I was triggered from main"
       - name: say hello greeting
         run: echo "hello, world!"
+        

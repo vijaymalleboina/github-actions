@@ -1,6 +1,6 @@
 name: o4- using action
 
-on: push
+on: workflow_dispatch
 
 jobs:
   build:

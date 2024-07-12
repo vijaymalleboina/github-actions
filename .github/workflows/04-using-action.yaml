@@ -12,6 +12,6 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: '20.x'
-      - name: installing dependences
+      - name: install dependences
         run: npm ci
-        working-directory: 04-using-action/recat-app
+        working-directory: 04-using-actions/recat-app
